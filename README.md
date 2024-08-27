@@ -15,13 +15,13 @@ DeepDive is designed to help users gain a deeper understanding of a subject by a
 
 To install DeepDive, simply clone this repository and build the executable using the following command:
 ```bash
-go build .
+go build bin/single-search/single-search.go 
 ```
 ### Usage
 
 Run DeepDive with the following command:
 ```bash
-./deepdive [options]
+./single-search [options]
 ```
 **Options**
 ------------
@@ -37,7 +37,7 @@ Run DeepDive with the following command:
 -----------------
 
 ```bash
-./deepdive --question "What are the best seaside beaches near Milan, Italy?" --output-graph-path milan_beaches.md
+./single-search --question "What are the best seaside beaches near Milan, Italy?" --output-graph-path milan_beaches.md
 ```
 This command will generate a knowledge graph for the specified question and save it to `milan_beaches.md`.
 
